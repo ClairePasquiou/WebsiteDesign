@@ -10,3 +10,14 @@ h1{
   text-align: center;
   font-family: 'Poppins', sans-serif;
 }
+
+
+/*Navigation bar*/
+
+.navbar-brand{
+  margin-left:50px;
+  
+}
+.navbar-nav {
+            margin-left: 900px;
+        }
