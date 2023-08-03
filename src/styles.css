@@ -5,19 +5,155 @@ font-family: 'Outfit', sans-serif;
 font-family: 'Poppins', sans-serif;
 */
 
-
-h1{
+h1 {
   text-align: center;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
+body{
+  color: #653b28;;
+}
 
 /*Navigation bar*/
 
-.navbar-brand{
-  margin-left:50px;
-  
+.navbar-brand {
+  margin-left: 50px;
 }
 .navbar-nav {
-            margin-left: 900px;
-        }
+  margin-left: 900px;
+}
+
+/* Hero*/
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
+    url("../images/hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 200px 0;
+}
+
+header a {
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 3px;
+  display: inline-block;
+  margin-top: 32px;
+  text-transform: uppercase;
+  background-color: #ddd1d1;
+
+  text-decoration: none;
+  color: #653b28;
+  padding: 16px 32px;
+  transition: 0.3s;
+  
+}
+
+header a:hover{
+  color: white;
+}
+
+/*About*/
+
+.about{
+  background:#ddd1d1;
+  padding:70px 100px 100px 30px;
+}
+
+.description-text{
+  padding-top: 60px;
+}
+
+.grid{
+  display:grid ;
+  grid-gap: 64px;
+}
+
+.grid-2-columns{
+  grid-template-columns: 1fr 1fr;
+}
+.img-responsive{
+  width: 60%;
+  display:block;
+  margin:auto;
+}
+
+/*Services*/
+
+ div.services h4, h3 {
+  text-align: center;
+}
+
+
+.services{
+  padding:70px 200px 70px 200px;
+}
+
+
+.services-intro {
+  display: flex;
+  justify-content: center;
+}
+.services-intro a{
+ font-weight: bold;
+  text-align: center;
+  letter-spacing: 3px;
+  display: inline-block;
+  margin-top: 32px;
+  text-transform: uppercase;
+  background-color: #ddd1d1;
+
+  text-decoration: none;
+  color: #653b28;
+  padding: 16px 32px;
+  transition: 0.3s;
+  
+}
+
+.services-intro a:hover{
+  color: white;
+}
+
+/*Booking*/
+
+.booking{
+    background:#ddd1d1;
+  padding:70px 200px 70px 200px;
+  
+}
+
+.booking a{
+ font-weight: bold;
+  text-align: center;
+  letter-spacing: 3px;
+  display: inline-block;
+  margin-top: 32px;
+  text-transform: uppercase;
+  background-color: #ffffff;
+
+  text-decoration: none;
+  color: #653b28;
+  padding: 16px 32px;
+  transition: 0.3s;
+  
+}
+
+.booking a:hover{
+    background-color: #653b28;
+
+  color: white;
+ 
+}
+.appointment-button{
+  display: flex;
+  justify-content: center;
+}
+
+/*Footer*/
+
+footer{
+  background-color: #ddd1d1;
+  padding-bottom: 40px;
+}
