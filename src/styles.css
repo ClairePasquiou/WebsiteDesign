@@ -10,13 +10,11 @@ h1 {
   font-family: "Poppins", sans-serif;
 }
 
-body{
-  color: #653b28;;
+body {
+  color: #653b28;
 }
 
 /*Navigation bar*/
-
-
 
 a {
   text-decoration: none;
@@ -26,25 +24,27 @@ li {
   list-style: none;
 }
 
-.navbar{
+/* NAVBAR STYLING STARTS */
+.navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 20px;
-  background-color: #ddd1d1 ;
-  color: #653b28;
-
-}
-
-.nav-links a{
+  background-color: #ddd1d1;
   color: #653b28;
 }
 
-.logo{
-  font-size: 30px;
+.nav-links a {
+  color: #653b28;
 }
 
-.menu{
+/* LOGO */
+.logo {
+  font-size: 32px;
+}
+
+/* NAVBAR MENU */
+.menu {
   display: flex;
   gap: 1em;
   font-size: 18px;
@@ -59,6 +59,93 @@ li {
 .menu li {
   padding: 5px 14px;
 }
+
+/* DROPDOWN MENU */
+.services {
+  position: relative;
+}
+
+.dropdown {
+  background-color: #ddd1d1;
+  padding: 1em 0;
+  position: absolute; /*WITH RESPECT TO PARENT*/
+  display: none;
+  border-radius: 8px;
+  top: 35px;
+}
+
+.dropdown li + li {
+  margin-top: 10px;
+}
+
+.dropdown li {
+  padding: 0.5em 1em;
+  width: 8em;
+  text-align: center;
+}
+
+.dropdown li:hover {
+  background-color: white;
+}
+
+.services:hover .dropdown {
+  display: block;
+}
+
+/* CHECKBOX HACK */
+
+input[type="checkbox"] {
+  display: none;
+}
+
+/* HAMBURGER MENU */
+.hamburger {
+  display: none;
+  font-size: 24px;
+  user-select: none;
+}
+
+/* APPLYING MEDIA QUERIES */
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    position: absolute;
+    background-color: #ddd1d1;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px 0;
+  }
+
+  .menu li:hover {
+    display: inline-block;
+    background-color: white;
+    transition: 0.3s ease;
+  }
+
+  .menu li + li {
+    margin-top: 12px;
+  }
+
+  input[type="checkbox"]:checked ~ .menu {
+    display: block;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .dropdown {
+    left: 50%;
+    top: 30px;
+    transform: translateX(35%);
+  }
+
+  .dropdown li:hover {
+    background-color: white;
+  }
+}
+
 /* Hero*/
 
 header {
@@ -84,56 +171,54 @@ header a {
   color: #653b28;
   padding: 16px 32px;
   transition: 0.3s;
-  
 }
 
-header a:hover{
+header a:hover {
   color: white;
 }
 
 /*About*/
 
-.about{
-  background:#ddd1d1;
-  padding:70px 100px 100px 30px;
+.about {
+  background: #ddd1d1;
+  padding: 70px 100px 100px 30px;
 }
 
-.description-text{
+.description-text {
   padding-top: 60px;
 }
 
-.grid{
-  display:grid ;
+.grid {
+  display: grid;
   grid-gap: 64px;
 }
 
-.grid-2-columns{
+.grid-2-columns {
   grid-template-columns: 1fr 1fr;
 }
-.img-responsive{
+.img-responsive {
   width: 60%;
-  display:block;
-  margin:auto;
+  display: block;
+  margin: auto;
 }
 
 /*Services*/
 
- div.services h4, h3 {
+div.services h4,
+h3 {
   text-align: center;
 }
 
-
-.services{
-  padding:70px 200px 70px 200px;
+.services {
+  padding: 70px 200px 70px 200px;
 }
-
 
 .services-intro {
   display: flex;
   justify-content: center;
 }
-.services-intro a{
- font-weight: bold;
+.services-intro a {
+  font-weight: bold;
   text-align: center;
   letter-spacing: 3px;
   display: inline-block;
@@ -145,23 +230,21 @@ header a:hover{
   color: #653b28;
   padding: 16px 32px;
   transition: 0.3s;
-  
 }
 
-.services-intro a:hover{
+.services-intro a:hover {
   color: white;
 }
 
 /*Booking*/
 
-.booking{
-    background:#ddd1d1;
-  padding:70px 200px 70px 200px;
-  
+.booking {
+  background: #ddd1d1;
+  padding: 70px 200px 70px 200px;
 }
 
-.booking a{
- font-weight: bold;
+.booking a {
+  font-weight: bold;
   text-align: center;
   letter-spacing: 3px;
   display: inline-block;
@@ -173,23 +256,21 @@ header a:hover{
   color: #653b28;
   padding: 16px 32px;
   transition: 0.3s;
-  
 }
 
-.booking a:hover{
-    background-color: #653b28;
+.booking a:hover {
+  background-color: #653b28;
 
   color: white;
- 
 }
-.appointment-button{
+.appointment-button {
   display: flex;
   justify-content: center;
 }
 
 /*Footer*/
 
-footer{
+footer {
   background-color: #ddd1d1;
   padding-bottom: 40px;
 }
