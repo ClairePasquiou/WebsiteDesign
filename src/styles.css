@@ -1,4 +1,5 @@
 /*
+font-family: 'Dancing Script', cursive;
 font-family: 'Montserrat', sans-serif;
 font-family: 'Nanum Gothic', sans-serif;
 font-family: 'Outfit', sans-serif;
@@ -12,6 +13,7 @@ h1 {
 
 body {
   color: #653b28;
+font-family: 'Poppins', sans-serif;
 }
 
 /*Navigation bar*/
@@ -43,6 +45,11 @@ li {
   font-size: 32px;
 }
 
+.logo p{
+  font-family: 'Dancing Script', cursive;
+  font-weight: bold;
+}
+
 /* NAVBAR MENU */
 .menu {
   display: flex;
@@ -61,7 +68,7 @@ li {
 }
 
 /* DROPDOWN MENU */
-.services {
+.services{
   position: relative;
 }
 
@@ -105,57 +112,18 @@ input[type="checkbox"] {
   user-select: none;
 }
 
-/* APPLYING MEDIA QUERIES */
-@media (max-width: 768px) {
-  .menu {
-    display: none;
-    position: absolute;
-    background-color: #ddd1d1;
-    right: 0;
-    left: 0;
-    text-align: center;
-    padding: 16px 0;
-  }
 
-  .menu li:hover {
-    display: inline-block;
-    background-color: white;
-    transition: 0.3s ease;
-  }
-
-  .menu li + li {
-    margin-top: 12px;
-  }
-
-  input[type="checkbox"]:checked ~ .menu {
-    display: block;
-  }
-
-  .hamburger {
-    display: block;
-  }
-
-  .dropdown {
-    left: 50%;
-    top: 30px;
-    transform: translateX(35%);
-  }
-
-  .dropdown li:hover {
-    background-color: white;
-  }
-}
 
 /* Hero*/
 
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)),
     url("../images/hero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
   text-align: center;
-  padding: 200px 0;
+  padding: 220px 0;
 }
 
 header a {
@@ -236,6 +204,31 @@ h3 {
   color: white;
 }
 
+.grid-3-columns {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.services-1{
+  background-color: #b28973;
+  border-radius: 30px;
+  padding:20px;
+  
+
+}
+
+.services-2{
+  background-color: #d1c8c1;
+  border-radius: 30px;
+  padding: 20px;
+  
+}
+
+.services-3{
+  background-color: #f1f0ef;
+  border-radius: 30px;
+  padding: 20px;
+}
+
 /*Booking*/
 
 .booking {
@@ -273,4 +266,52 @@ h3 {
 footer {
   background-color: #ddd1d1;
   padding-bottom: 40px;
+}
+
+
+/* APPLYING MEDIA QUERIES */
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    position: absolute;
+    background-color: #ddd1d1;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px 0;
+  }
+
+  .menu li:hover {
+    display: inline-block;
+    background-color: white;
+    transition: 0.3s ease;
+  }
+
+  .menu li + li {
+    margin-top: 12px;
+  }
+
+  input[type="checkbox"]:checked ~ .menu {
+    display: block;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .dropdown {
+    left: 50%;
+    top: 30px;
+    transform: translateX(35%);
+  }
+
+  .dropdown li:hover {
+    background-color: white;
+  }
+
+  .grid{
+    grid-template-columns: 1fr;
+    grid-gap: 32px;
+  }
+ 
 }
