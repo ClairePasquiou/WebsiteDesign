@@ -13,7 +13,7 @@ h1 {
 
 body {
   color: #653b28;
-font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 /*Navigation bar*/
@@ -45,8 +45,8 @@ li {
   font-size: 32px;
 }
 
-.logo p{
-  font-family: 'Dancing Script', cursive;
+.logo p {
+  font-family: "Dancing Script", cursive;
   font-weight: bold;
 }
 
@@ -68,9 +68,6 @@ li {
 }
 
 /* DROPDOWN MENU */
-.services{
-  position: relative;
-}
 
 .dropdown {
   background-color: #ddd1d1;
@@ -95,10 +92,6 @@ li {
   background-color: white;
 }
 
-.services:hover .dropdown {
-  display: block;
-}
-
 /* CHECKBOX HACK */
 
 input[type="checkbox"] {
@@ -111,8 +104,6 @@ input[type="checkbox"] {
   font-size: 24px;
   user-select: none;
 }
-
-
 
 /* Hero*/
 
@@ -205,25 +196,22 @@ h3 {
 }
 
 .grid-3-columns {
-    grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
-.services-1{
+.services-1 {
   background-color: #b28973;
   border-radius: 30px;
-  padding:20px;
-  
-
+  padding: 20px;
 }
 
-.services-2{
+.services-2 {
   background-color: #d1c8c1;
   border-radius: 30px;
   padding: 20px;
-  
 }
 
-.services-3{
+.services-3 {
   background-color: #f1f0ef;
   border-radius: 30px;
   padding: 20px;
@@ -268,7 +256,6 @@ footer {
   padding-bottom: 40px;
 }
 
-
 /* APPLYING MEDIA QUERIES */
 @media (max-width: 768px) {
   .menu {
@@ -309,9 +296,26 @@ footer {
     background-color: white;
   }
 
-  .grid{
+  .grid {
     grid-template-columns: 1fr;
     grid-gap: 32px;
   }
- 
+
+  .about{
+    padding: 70px 10px 70px 20px;
+  }
+  .description-text h2{
+    text-align: center;
+  }
+  .services {
+    padding: 70px 10px 70px 20px;
+  }
+
+  .booking{
+    padding: 70px 10px 70px 20px;
+  }
+
+footer p{
+  font-size: 10px;
+}
 }
