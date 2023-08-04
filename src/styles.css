@@ -301,21 +301,33 @@ footer {
     grid-gap: 32px;
   }
 
-  .about{
+  .about {
     padding: 70px 10px 70px 20px;
   }
-  .description-text h2{
+  .description-text h2 {
     text-align: center;
   }
   .services {
     padding: 70px 10px 70px 20px;
   }
 
-  .booking{
-    padding: 70px 10px 70px 20px;
+  .booking {
+    padding: 70px 20px 70px 20px;
   }
 
-footer p{
-  font-size: 10px;
+  footer p {
+    font-size: 10px;
+  }
 }
+
+@media only screen and (min-width: 768px) and (max-width: 1180px) and (orientation: portrait) {
+  .img-responsive {
+    margin-top: 100px;
+    height: 300px;
+    width: 300px;
+  }
+
+  .services {
+    padding: 70px 10px 70px 20px;
+  }
 }
