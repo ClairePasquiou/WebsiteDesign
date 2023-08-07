@@ -6,13 +6,18 @@ font-family: 'Outfit', sans-serif;
 font-family: 'Poppins', sans-serif;
 */
 
-h1 {
-  text-align: center;
-  font-family: "Poppins", sans-serif;
+:root {
+  --color-one: #653b28;
+  --color-two: #ddd1d1;
 }
 
 body {
-  color: #653b28;
+  color: var(--color-one);
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  text-align: center;
   font-family: "Poppins", sans-serif;
 }
 
@@ -26,21 +31,21 @@ li {
   list-style: none;
 }
 
-/* NAVBAR STYLING STARTS */
+/* Navbar styling */
 .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 20px;
-  background-color: #ddd1d1;
-  color: #653b28;
+  background-color: var(--color-two);
+  color: var(--color-one);
 }
 
 .nav-links a {
-  color: #653b28;
+  color: var(--color-one);
 }
 
-/* LOGO */
+/* Logo */
 .logo {
   font-size: 32px;
 }
@@ -50,7 +55,7 @@ li {
   font-weight: bold;
 }
 
-/* NAVBAR MENU */
+/* Navbar menu */
 .menu {
   display: flex;
   gap: 1em;
@@ -67,12 +72,12 @@ li {
   padding: 5px 14px;
 }
 
-/* DROPDOWN MENU */
+/* Dropdown menu */
 
 .dropdown {
-  background-color: #ddd1d1;
+  background-color: var(--color-two);
   padding: 1em 0;
-  position: absolute; /*WITH RESPECT TO PARENT*/
+  position: absolute;
   display: none;
   border-radius: 8px;
   top: 35px;
@@ -92,13 +97,11 @@ li {
   background-color: white;
 }
 
-/* CHECKBOX HACK */
-
 input[type="checkbox"] {
   display: none;
 }
 
-/* HAMBURGER MENU */
+/* Hamburger Menu */
 .hamburger {
   display: none;
   font-size: 24px;
@@ -124,10 +127,10 @@ header a {
   display: inline-block;
   margin-top: 32px;
   text-transform: uppercase;
-  background-color: #ddd1d1;
+  background-color: var(--color-two);
 
   text-decoration: none;
-  color: #653b28;
+  color: var(--color-one);
   padding: 16px 32px;
   transition: 0.3s;
 }
@@ -139,7 +142,7 @@ header a:hover {
 /*About*/
 
 .about {
-  background: #ddd1d1;
+  background: var(--color-two);
   padding: 70px 100px 100px 30px;
 }
 
@@ -183,10 +186,10 @@ h3 {
   display: inline-block;
   margin-top: 32px;
   text-transform: uppercase;
-  background-color: #ddd1d1;
+  background-color: var(--color-two);
 
   text-decoration: none;
-  color: #653b28;
+  color: var(--color-one);
   padding: 16px 32px;
   transition: 0.3s;
 }
@@ -220,7 +223,7 @@ h3 {
 /*Booking*/
 
 .booking {
-  background: #ddd1d1;
+  background: var(--color-two);
   padding: 70px 200px 70px 200px;
 }
 
@@ -234,13 +237,13 @@ h3 {
   background-color: #ffffff;
 
   text-decoration: none;
-  color: #653b28;
+  color: var(--color-one);
   padding: 16px 32px;
   transition: 0.3s;
 }
 
 .booking a:hover {
-  background-color: #653b28;
+  background-color: var(--color-one);
 
   color: white;
 }
@@ -252,16 +255,24 @@ h3 {
 /*Footer*/
 
 footer {
-  background-color: #ddd1d1;
+  background-color: var(--color-two);
   padding-bottom: 40px;
 }
+footer a {
+  color: var(--color-one);
+  font-weight: bold;
+}
 
-/* APPLYING MEDIA QUERIES */
+footer a:hover {
+  color: #f1f0ef;
+}
+
+/* Media queries */
 @media (max-width: 768px) {
   .menu {
     display: none;
     position: absolute;
-    background-color: #ddd1d1;
+    background-color: var(--color-two);
     right: 0;
     left: 0;
     text-align: center;
