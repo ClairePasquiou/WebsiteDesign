@@ -227,12 +227,16 @@ h3 {
   padding: 70px 200px 70px 200px;
 }
 
+.booking h3 {
+  margin-bottom: 25px;
+}
+
 .booking a {
   font-weight: bold;
   text-align: center;
   letter-spacing: 3px;
   display: inline-block;
-  margin-top: 32px;
+  margin-top: 30px;
   text-transform: uppercase;
   background-color: #ffffff;
 
@@ -256,7 +260,12 @@ h3 {
 
 footer {
   background-color: var(--color-two);
+  padding-top: 40px;
   padding-bottom: 40px;
+}
+
+footer p {
+  font-size: 13px;
 }
 footer a {
   color: var(--color-one);
@@ -269,6 +278,12 @@ footer a:hover {
 
 /* Media queries */
 @media (max-width: 768px) {
+  header h1 {
+    font-size: 23px;
+  }
+  header h3 {
+    font-size: 15px;
+  }
   .menu {
     display: none;
     position: absolute;
@@ -313,17 +328,44 @@ footer a:hover {
   }
 
   .about {
-    padding: 70px 10px 70px 20px;
+    padding: 50px 10px 50px 20px;
   }
+
+  .about p {
+    font-size: 15px;
+  }
+
+  .description-text {
+    padding-top: 10px;
+  }
+
   .description-text h2 {
     text-align: center;
   }
   .services {
-    padding: 70px 10px 70px 20px;
+    padding: 50px 10px 50px 20px;
+  }
+
+  .services p {
+    font-size: 15px;
+    text-align: center;
   }
 
   .booking {
-    padding: 70px 20px 70px 20px;
+    padding: 50px 20px 50px 20px;
+  }
+
+  .booking a {
+    margin-top: 5px;
+  }
+
+  .booking h3 {
+    font-size: 18px;
+  }
+
+  .booking p {
+    font-size: 12px;
+    margin: none;
   }
 
   footer p {
