@@ -36,9 +36,13 @@ li {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px;
+  padding: 5px;
   background-color: var(--color-two);
   color: var(--color-one);
+}
+
+.nav-links {
+  padding-top: 10px;
 }
 
 .nav-links a {
@@ -47,6 +51,7 @@ li {
 
 /* Logo */
 .logo {
+  padding-top: 10px;
   font-size: 32px;
 }
 
