@@ -36,13 +36,14 @@ li {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 5px;
+  padding: 0px 20px 0px 40px;
   background-color: var(--color-two);
   color: var(--color-one);
 }
 
 .nav-links {
   padding-top: 10px;
+  font-weight: bold;
 }
 
 .nav-links a {
